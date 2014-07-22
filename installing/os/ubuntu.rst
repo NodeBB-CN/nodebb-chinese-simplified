@@ -9,7 +9,7 @@ Ubuntu
 	$ sudo apt-get install git nodejs redis-server imagemagick npm
 
 
-如果你想使用 MongoDB, LevelDB, 或者其他数据库来代替 Redis, 请查阅 :doc:` 配置数据库<../../configuring/databases>` 部分.
+如果你想使用 MongoDB, LevelDB, 或者其他数据库来代替 Redis, 请查阅 :doc:`配置数据库<../../configuring/databases>` 部分.
 
 **如果你的软件管理器中安装的 Node.js 低于 0.8 (例如 Ubuntu 12.10, 13.04), 请执行 ``node --version`` 来确认你的 Node.js 版本:**
 
