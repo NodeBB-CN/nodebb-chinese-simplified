@@ -67,9 +67,7 @@ Go into the newly created `nodebb` directory and install the required dependenci
 
 .. code::
 
-    > db.createUser( { user: "nodebb",
-    ...       pwd: "<输入密码>",
-    ...       roles: [ "readWrite" ] } )
+    > db.createUser( { user: "nodebb", pwd: "<输入安全密码>", roles: [ "readWrite" ] } )
 
 **提示:** 角色 ``readWrite`` 将制定数据库的读或写任何集合(collection)的权限付给用户。
 
@@ -91,20 +89,20 @@ MongoDB 需要启用文本搜索。修改 ``/etc/mongodb.conf``。
 第 8 步: 配置 NodeBB
 -------------------------
 
-Make sure you are in your NodeBB root folder. If not, just type:
+确认你在 NodeBB 的根目录下。如果不在，输入：
 
 .. code::
 
     $ cd /path/to/nodebb
 
-To setup the app, type:
+安装应用，输入：
 
 .. code::
 
     $ node app --setup
 
-* Change the hostname to your domain name.  
-* Accept the defaults by pressing enter until it asks you what database you want to use. Type ``mongo`` in that field.
+* 更改 hostname 为你的域名。
+* 敲回车接受默认设置。只到询问吧你使用什么数据库，在此输入 ``mongo``。
 * Accept the default port, unless you changed it in the previous steps.
 * Change your username to ``nodebb``, unless you set it to another username.
 * Enter in the password you made in step 5.
@@ -112,15 +110,15 @@ To setup the app, type:
 
 Continue with the installation, following the instructions the installer provides you.
 
-Step 9: Starting the App
+第 9 步: 启动应用
 -------------------------
 
-To start the app, run:
+启用应用，运行：
 
 .. code::
 
     $ node app
 
-Now visit ``yourdomainorip.com:4567`` and your NodeBB installation should be running.
+现在访问 ``yourdomainorip.com:4567`` 然后你安装的 NodeBB 已经在运行了。
 
-NodeBB can also be started with helper programs, such as :doc:`supervisor or forever <../../running/index>`. You can also use ``nginx`` as a :doc:`reverse proxy <../../configuring/proxies>`).
+NodeBB 可以由其他的辅助程序启动，例如 :doc:`supervisor 或 forever <../../running/index>`。你同样可以用 ``nginx`` 做 :doc:`反向代理 <../../configuring/proxies>`)。
